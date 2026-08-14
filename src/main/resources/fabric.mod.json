@@ -1,0 +1,53 @@
+{
+	"schemaVersion": 1,
+	"id": "sitrusskin",
+	"version": "${version}",
+	"name": "Sitrusskin",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/sitrusskin/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "com.kiuseii.sitrusskin.Sitrusskin",
+				"adapter": "kotlin"
+			}
+		],
+		"client": [
+			{
+				"value": "com.kiuseii.sitrusskin.client.SitrusskinClient",
+				"adapter": "kotlin"
+			}
+		],
+		"appleskin": [
+			{
+				"adapter": "kotlin",
+				"value": "com.kiuseii.sitrusskin.client.AppleSkinCobblemonBridge"
+			}
+		]
+	},
+	"mixins": [
+		"sitrusskin.mixins.json",
+		{
+			"config": "sitrusskin.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*",
+		"appleskin": "*",
+		"cobblemon": "*"
+	}
+}
