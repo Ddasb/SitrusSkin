@@ -3,9 +3,9 @@
 	"id": "sitrusskin",
 	"version": "${version}",
 	"name": "Sitrusskin",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Cobblemon addon to see Seasonings effects on Ponigiri and Sinister Tea",
 	"authors": [
-		"Me!"
+		"Kiuseii"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
